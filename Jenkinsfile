@@ -45,7 +45,7 @@ pipeline{
              sh 'git checkout feature-1.1'
              sh 'export KUBECONFIG=~/.kube/config'
              sh 'aws eks --region us-west-2 update-kubeconfig --name terraform-eks-demo'
-             
+             sh 'kubectl apply -f deployment.yaml'
              sh 'kubectl apply -f service.yaml'
             }
           }
