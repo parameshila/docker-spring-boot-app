@@ -7,7 +7,7 @@ spec:
   template:
     metadata:
       labels:
-        app: bank-service
+        app: bank-service1
     spec:
       containers:
         - name: bank-service
